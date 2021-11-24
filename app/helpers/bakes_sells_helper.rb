@@ -1,0 +1,2 @@
+module BakesSellsHelper
+end

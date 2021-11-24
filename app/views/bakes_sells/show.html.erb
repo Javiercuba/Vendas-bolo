@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bakes_sell.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @bakes_sell.price %>
+</p>
+
+<p>
+  <strong>Date sell:</strong>
+  <%= @bakes_sell.date_sell %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @bakes_sell.quantity %>
+</p>
+
+<%= link_to 'Edit', edit_bakes_sell_path(@bakes_sell) %> |
+<%= link_to 'Back', bakes_sells_path %>

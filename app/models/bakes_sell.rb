@@ -1,0 +1,2 @@
+class BakesSell < ApplicationRecord
+end
