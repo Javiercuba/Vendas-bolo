@@ -2,7 +2,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     background: #dedede;
-    perspective: 2000px;
+    perspective: 200px;
     height: 100vh;
 }
 
@@ -88,8 +88,31 @@ table {
     width: 30%;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .button-43 {
-        padding: 1rem;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    table,
+    td,
+    tr {
+        display: block;
+    }
+    th {
+        padding: 2px;
+    }
+    table {
+        width: 100%;
+        td {
+            border-bottom: 1px solid #eee;
+            position: center;
+            padding-left: 20px;
+            margin-left: 15px;
+        }
+        tr {
+            width: 100%;
+            border: 1px solid rgba(204, 204, 204, 0.376);
+        }
     }
 }

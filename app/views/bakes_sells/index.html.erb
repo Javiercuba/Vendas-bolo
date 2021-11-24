@@ -21,9 +21,10 @@
             <td><%= bakes_sell.price %></td>
             <td><%= bakes_sell.date_sell %></td>
             <td><%= bakes_sell.quantity %></td>
-            <td><%= link_to 'Mostrar', bakes_sell , class:"button-show" %></td>
-            <td><%= link_to 'Editar', edit_bakes_sell_path(bakes_sell), class:"button-edit" %></td>
-            <td><%= link_to 'Deletar', bakes_sell, method: :delete, data: { confirm: 'Are you sure?' },class:"button-delete" %></td>
+            <td>
+            <%= link_to 'Mostrar', bakes_sell , class:"button-show" %>
+            <%= link_to 'Editar', edit_bakes_sell_path(bakes_sell), class:"button-edit" %>
+            <%= link_to 'Deletar', bakes_sell, method: :delete, data: { confirm: 'Are you sure?' },class:"button-delete" %></td>
           </tr>
         <% end %>
       </tbody>
