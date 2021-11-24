@@ -1,3 +1,95 @@
-// Place all the styles related to the bakes_sells controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    background: #dedede;
+    perspective: 2000px;
+    height: 100vh;
+}
+
+table {
+    margin: 100px auto;
+    border-spacing: 0px;
+    width: 680px;
+    box-shadow: 5px 4px 30px rgba(124, 119, 119, 0.945);
+    border-radius: 10px;
+    background: #fff;
+    transition: all .5s;
+    td {
+        padding: 20px 15px;
+    }
+    thead {
+        background: linear-gradient(45deg, #614ad3, #2279b3);
+        border-radius: 10px 10px 0 0;
+        width: 68px;
+        height: 48px;
+        padding: 20px;
+        color: #ffffff;
+        tr {
+            padding-top: 10px;
+        }
+    }
+    tbody {
+        td {
+            border-top: 1px solid #f0f0f0;
+        }
+        tr:hover {
+            background: rgba(123, 153, 218, .1);
+        }
+    }
+}
+
+.button-show {
+    background-color: #4cea4c98;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 40px;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-edit {
+    background-color: #e0ea4c98;
+    border-radius: 8px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 40px;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-delete {
+    background-color: #f6383898;
+    border-radius: 8px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 40px;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-43 {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    color: #FFFFFF;
+    display: flex;
+    margin: 10;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+    .button-43 {
+        padding: 1rem;
+    }
+}
