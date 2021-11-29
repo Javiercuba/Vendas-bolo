@@ -78,6 +78,8 @@ table {
 .button-43 {
     background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
     border-radius: .5rem;
+    background-color: #f0f0f0;
+    text-decoration-color: #37AEE2;
     color: #FFFFFF;
     display: flex;
     margin: 10;
@@ -94,25 +96,56 @@ table {
         margin-top: 20px;
         padding: 10px;
     }
-    table,
+    table{
+        width: 100%;
+    }
+    tbody,
+    th,
     td,
     tr {
         display: block;
     }
-    th {
-        padding: 2px;
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
     }
-    table {
+    tr {
+        border: 1px solid #ccc;
+        
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        text-align: center;
         width: 100%;
-        td {
-            border-bottom: 1px solid #eee;
-            position: center;
-            padding-left: 20px;
-            margin-left: 15px;
-        }
-        tr {
-            width: 100%;
-            border: 1px solid rgba(204, 204, 204, 0.376);
-        }
+        padding-right: 10px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "Tipo do bolo";
+    }
+    td:nth-of-type(2):before {
+        content: "Preço";
+    }
+    td:nth-of-type(3):before {
+        content: "Data de venda";
+    }
+    td:nth-of-type(4):before {
+        content: "Quantidade";
     }
 }

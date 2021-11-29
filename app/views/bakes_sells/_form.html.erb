@@ -11,27 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="">
+    <%= form.label( :name,"bolo") %>
+    <%= form.text_field :name, class: "field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
+  <div class="">
+    <%= form.label( :price,"Preço") %>
+    <%= form.text_field :price, class: "field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :date_sell %>
-    <%= form.text_field :date_sell %>
+  <div class="">
+    <%= form.label( :date_sell,"Data de venda") %>
+    <%= form.text_field :date_sell, class: "field" %>
   </div>
 
-  <div class="field">
-    <%= form.label :quantity %>
-    <%= form.text_field :quantity %>
+  <div class="">
+    <%= form.label( :quantity,"Quantidade") %>
+    <%= form.number_field( :quantity, in: 1..100, step:1,class: "field") %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="">
+    <%= form.submit("Cadastrar venda",:class =>"actions") %>
   </div>
+ 
+
+  
 <% end %>
