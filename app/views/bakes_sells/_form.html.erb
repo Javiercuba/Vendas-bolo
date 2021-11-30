@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label( :date_sell,"Data de venda") %>
-    <%= form.date_field( :date_sell, as: :date,  value: Date.today.strftime("%d/%m/%Y"),class: "field") %>
+    <%= form.text_field( :date_sell,class: "field",autocomplete: 'off') %>
   </div>
 
   <div>
