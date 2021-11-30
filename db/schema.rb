@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_11_24_132147) do
   create_table "bakes_sells", force: :cascade do |t|
     t.string "name"
     t.float "price"
-    t.string "date_sell"
+    t.date "date_sell"
     t.decimal "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
